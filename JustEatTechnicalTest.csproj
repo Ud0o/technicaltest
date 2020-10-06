@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Component.cs" />
+    <Compile Remove="Models\Cuisine.cs" />
+    <Compile Remove="Models\CuisineSet.cs" />
+    <Compile Remove="Models\CuisineType.cs" />
+    <Compile Remove="Models\DeliveryEtaMinutes.cs" />
+    <Compile Remove="Models\Logo.cs" />
+    <Compile Remove="Models\MetaData.cs" />
+    <Compile Remove="Models\MetaData2.cs" />
+    <Compile Remove="Models\Restaurant.cs" />
+    <Compile Remove="Models\RestaurantSet.cs" />
+    <Compile Remove="Models\RestaurantSmall.cs" />
+    <Compile Remove="Models\ScoreMetaData.cs" />
+    <Compile Remove="Models\SearchedTerms.cs" />
+    <Compile Remove="Models\SeeAllSearchTarget.cs" />
+    <Compile Remove="Models\TagDetail.cs" />
+    <Compile Remove="Models\View.cs" />
+    <Compile Remove="Models\ViewData.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+
+
+</Project>
