@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using JustEatTechnicalTest.Models;
 using JustEatTechnicalTest.Services.Interfaces;
+using System;
 
 namespace JustEatTechnicalTest.Controllers
 {
@@ -22,8 +23,11 @@ namespace JustEatTechnicalTest.Controllers
 
         public async Task<IActionResult> GetRestaurants(string postcode)
         {
+            if (string.IsNullOrEmpty(postcode))
+            {
+                throw new ArgumentException("Postcode required");
+            }
             var json = await _searchService.GetRestaurantsAsync(postcode);
-
             return View("Index", json.Restaurants);
         }
     }
