@@ -14,18 +14,22 @@
         @using (Html.BeginForm("GetRestaurants", "Search", FormMethod.Post))
         {
             @Html.ValidationSummary(true)
-            <input type="search" id="postcode" name="postcode">
+            <input type="search" id="postcode" name="postcode" 
+                   required 
+                   oninvalid="setCustomValidity('Please enter a valid postcode.')"
+                   oninput="setCustomValidity('')"
+                   pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})">
             <input type="submit" value="Submit" id="submit">
         }
     </div>
 </section>
 
         
-<h2 id="scroll" class="text-center pt-5">Restaurants near you:</h2>
+<h2 class="text-center pt-5">Restaurants near you:</h2>
 <div class="col-12 d-flex flex-wrap justify-content-center p-10 text-center pt-5">
     @foreach (var item in Model)
     {
-        <div class="col-2 d-flex flex-column p-2 box m-1 justify-content-between">
+        <div id="scroll" class="col-2 d-flex flex-column p-2 box m-1 justify-content-between">
             <div>@Html.DisplayFor(modelItem => item.Name)</div>
             @foreach (var cuisine in item.CuisineTypes)
             {

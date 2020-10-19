@@ -15,6 +15,7 @@ namespace JustEatTechnicalTest.Controllers
         {
             _searchService = searchService;
         }
+
         public IActionResult Index()
         {
             var restaurants = new List<Restaurant>();
@@ -27,8 +28,8 @@ namespace JustEatTechnicalTest.Controllers
             {
                 throw new ArgumentException("Postcode required");
             }
-            var json = await _searchService.GetRestaurantsAsync(postcode);
-            return View("Index", json.Restaurants);
+            var response = await _searchService.GetRestaurantsAsync(postcode);
+            return View("Index", response.Restaurants);
         }
     }
 }
