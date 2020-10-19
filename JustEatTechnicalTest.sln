@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustEatTechnicalTest", "JustEatTechnicalTest.csproj", "{E5350E23-8D8C-4BE0-A171-1C6045500AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatTechnicalTest_Tests", "..\JustEatTechnicalTest_Tests\JustEatTechnicalTest_Tests.csproj", "{55252C58-59B8-431D-B312-E056334631A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9D77B6E1-A33A-4EF3-8CB1-FD57773DAA67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{104A1A25-28B8-49CE-9231-D76AFE32EFC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +19,12 @@ Global
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55252C58-59B8-431D-B312-E056334631A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55252C58-59B8-431D-B312-E056334631A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55252C58-59B8-431D-B312-E056334631A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55252C58-59B8-431D-B312-E056334631A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5350E23-8D8C-4BE0-A171-1C6045500AF2} = {9D77B6E1-A33A-4EF3-8CB1-FD57773DAA67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C3FA50A-00B8-4214-BBBD-6A719B90FAEE}

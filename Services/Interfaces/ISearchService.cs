@@ -8,6 +8,6 @@ namespace JustEatTechnicalTest.Services.Interfaces
 {
     public interface ISearchService
     {
-        Task<Root> GetRestaurantsAsync(string postcode);
+        Task<JustEatResponse> GetRestaurantsAsync(string postcode);
     }
 }

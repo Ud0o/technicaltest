@@ -2,8 +2,10 @@
 
 1 A)    3 hour session deserializing the API response and solution setup within VS (created a web api).
         2 hour session getting the inner workings complete; Search functionality changing solution over to MVC rather than ajax.
-        1.5 hour session working on styling of the search page, making it more user friendly, while ensuring the acceptance critea is met.
+        1 hour session working on styling of the search page, making it more user friendly, while ensuring the acceptance critea is met.
         30 mins writing this document.
+
+        I would like to add a stand alone angular app, deisgned with rest endpoints, I would then create a seperate .net core api for and retrieval, sending and modification of data.
 
 2) What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 
@@ -33,7 +35,7 @@
 
 4) How would you improve the Just Eat APIs that you just used?
 
-4 A)    Return less json so the object used to deserialise it doesnt have to be so cumbersome.
+4 A)    Perhaps split the endpoints up or add parameters to mitigate the returned json. A simple request is rather cumbersome.
 
 5) Please describe yourself using JSON.
 
@@ -42,7 +44,16 @@
 {
     "James": [
         {
-            "personality":"null"
+            "Favourites": [{
+                "Films":["Donnie Darko", "Good Will hunting", "Lost in translation"],
+                "City":"Kyoto",
+                "Food":"Squeezed Burger",
+            }],
+            "Hobbies": [{
+                "Sport":["Basketball", "Football", "Running"],
+                "leisure":["Architecture", "Cooking", "Travel"],
+            }],
+            "CoffeesPerDay":1,
         }
     ]
 }

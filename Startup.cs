@@ -30,7 +30,6 @@ namespace JustEatTechnicalTest
         {
             services.AddControllers();
             services.AddControllersWithViews();
-            services.AddHttpClient();
             services.AddScoped<ISearchService, SearchService>();
 
             services.AddHttpClient("justeat", c =>

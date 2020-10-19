@@ -18,16 +18,16 @@ namespace JustEatTechnicalTest.Services
             _httpClient = _clientFactory.CreateClient("justeat");
         }
 
-        public async Task<Root> GetRestaurantsAsync(string postcode)
+        public async Task<JustEatResponse> GetRestaurantsAsync(string postcode)
         {
-            var restaurants = new Root();
+            var restaurants = new JustEatResponse();
 
             var response = await _httpClient.GetAsync($"/restaurants?q={postcode}");
 
             if (response.IsSuccessStatusCode)
             {
                 using var stream = await response.Content.ReadAsStreamAsync();
-                return await JsonSerializer.DeserializeAsync<Root>(stream);
+                return await JsonSerializer.DeserializeAsync<JustEatResponse>(stream);
             }
             else
             {
