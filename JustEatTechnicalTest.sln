@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustEatTechnicalTest", "Jus
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9D77B6E1-A33A-4EF3-8CB1-FD57773DAA67}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{104A1A25-28B8-49CE-9231-D76AFE32EFC0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6EBE1DBF-A53B-44AF-977F-8033CC799664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEat.Tests.Unit", "..\JustEat.Tests.Unit\JustEat.Tests.Unit.csproj", "{13723858-112C-47E8-AF30-37F76C501A11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13723858-112C-47E8-AF30-37F76C501A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13723858-112C-47E8-AF30-37F76C501A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13723858-112C-47E8-AF30-37F76C501A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13723858-112C-47E8-AF30-37F76C501A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E5350E23-8D8C-4BE0-A171-1C6045500AF2} = {9D77B6E1-A33A-4EF3-8CB1-FD57773DAA67}
+		{13723858-112C-47E8-AF30-37F76C501A11} = {6EBE1DBF-A53B-44AF-977F-8033CC799664}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C3FA50A-00B8-4214-BBBD-6A719B90FAEE}

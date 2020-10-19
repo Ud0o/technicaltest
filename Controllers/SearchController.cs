@@ -26,7 +26,7 @@ namespace JustEatTechnicalTest.Controllers
         {
             if (string.IsNullOrEmpty(postcode))
             {
-                throw new ArgumentException("Postcode required");
+                return new BadRequestObjectResult(new { Error = "Postcode required." });
             }
             var response = await _searchService.GetRestaurantsAsync(postcode);
             return View("Index", response.Restaurants);

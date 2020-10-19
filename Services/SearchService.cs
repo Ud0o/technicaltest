@@ -18,6 +18,10 @@ namespace JustEatTechnicalTest.Services
             _httpClient = _clientFactory.CreateClient("justeat");
         }
 
+        public SearchService()
+        {
+        }
+
         public async Task<JustEatResponse> GetRestaurantsAsync(string postcode)
         {
             var restaurants = new JustEatResponse();
