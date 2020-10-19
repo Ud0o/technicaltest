@@ -16,9 +16,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "JustEatTechnicalTest": {
+    "JustEat.Api": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "Search",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

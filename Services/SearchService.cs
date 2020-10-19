@@ -1,11 +1,11 @@
-﻿using JustEatTechnicalTest.Models;
+﻿using JustEat.Api.Models;
 using System.Net.Http;
 using System.Threading.Tasks;
-using JustEatTechnicalTest.Services.Interfaces;
+using JustEat.Api.Services.Interfaces;
 using System.Text.Json;
 using System;
 
-namespace JustEatTechnicalTest.Services
+namespace JustEat.Api.Services
 {
     public class SearchService : ISearchService
     {

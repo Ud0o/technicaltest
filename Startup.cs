@@ -1,5 +1,5 @@
-using JustEatTechnicalTest.Services.Interfaces;
-using JustEatTechnicalTest.Services;
+using JustEat.Api.Services.Interfaces;
+using JustEat.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -9,7 +9,7 @@ using System;
 using System.Text;
 using System.Net.Http.Headers;
 
-namespace JustEatTechnicalTest
+namespace JustEat.Api
 {
     public class Startup
     {

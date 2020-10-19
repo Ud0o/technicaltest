@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace JustEatTechnicalTest
+namespace JustEat.Api
 {
     public class Program
     {

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using JustEatTechnicalTest.Models;
-using JustEatTechnicalTest.Services.Interfaces;
+using JustEat.Api.Models;
+using JustEat.Api.Services.Interfaces;
 using System;
 
-namespace JustEatTechnicalTest.Controllers
+namespace JustEat.Api.Controllers
 {
     public class SearchController : Controller
     {

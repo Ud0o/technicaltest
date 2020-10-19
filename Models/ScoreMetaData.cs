@@ -1,4 +1,4 @@
-﻿namespace JustEatTechnicalTest.Models
+﻿namespace JustEat.Api.Models
 {
     public class ScoreMetadata
     {
