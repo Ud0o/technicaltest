@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9D77B6E1-A33
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3F95D868-9488-4D28-B070-BAAFDA4411EF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustEat.UnitTests", "..\JustEat.UnitTests\JustEat.UnitTests.csproj", "{AAB6478D-9CAE-4402-A22A-E861A6678091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustEat.UnitTests", "test\JustEat.UnitTests\JustEat.UnitTests.csproj", "{AAB6478D-9CAE-4402-A22A-E861A6678091}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustEat.Api", "src\JustEat.Api\JustEat.Api.csproj", "{400F3DB9-9D80-4EFD-AD37-83FEAC9F1F18}"
 EndProject
